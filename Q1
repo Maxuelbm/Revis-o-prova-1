@@ -1,0 +1,28 @@
+n = 0
+ct = 0
+c1 = 0
+c2 = 0
+c3 = 0
+c4 = 0
+c5 = 0
+
+while n >= 0 :
+    n = int(input('Digite um valor '))
+    if n >=0:
+        if n <= 25:
+            c1 += 1
+        elif n <= 50:
+            c2 += 1 
+        elif n <= 75:
+            c3 += 1
+        elif n <= 100:
+            c4 +=1
+        else:
+            c5 +=1 
+        ct +=1
+        
+print('A porcentagem de 0 à 25 é: {0:.1f}%'.format((c1/ct)*100))
+print('A porcentagem de 26 à 50 é: {0:.1f}%'.format((c2/ct)*100))
+print('A porcentagem de 51 à 75 é: {0:.1f}%'.format((c3/ct)*100))
+print('A porcentagem de 76 à 100 é: {0:.1f}%'.format((c4/ct)*100))
+print('A porcentagem de maiores que 100 é: {0:.1f}%'.format((c5/ct)*100))
