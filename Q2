@@ -1,0 +1,6 @@
+f = 1
+n = int(input('Dgite um valor ')
+
+for i in range(0, n+2):
+    f = f*(n-i)
+print(f)
