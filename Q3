@@ -1,0 +1,13 @@
+n = int(input('Digite um valor '))
+anterior = 1
+atual = 1
+if n<=2: 
+    print('Digite um valor válido')
+else:
+    print(anterior)
+    print(atual)
+    for i in range(3,n+1):
+        f = anterior+atual
+        anterior = atual
+        atual = f 
+        print(f)
