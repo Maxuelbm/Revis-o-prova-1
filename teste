@@ -1,0 +1,64 @@
+x = int(input('Digite a coordenada x '))
+y = int(input('Digite a cordenada y '))
+movimento = (input('Digite o movimento do Robo ')).upper()
+contador = 0
+yfinal = 0
+xfinal = 0
+for k in movimento:
+    if (k == 'U'):
+        yfinal = y+1
+        contador +=1
+    elif (k == 'D'):
+        yfinal = y-1
+        contador +=1
+    elif (k == 'R'):
+        xfinal = x+1
+        contador +=1
+    elif (k == 'L'):
+        xfinal = x-1
+        contador +=1
+    elif (k == 'O'):
+        yfinal = y+1
+        xfinal = x-1
+        contador +=1
+    elif (k == 'N'):
+        yfinal = y+1
+        xfinal = x+1
+        contador +=1
+    elif (k == 'E'):
+        yfinal = y-1
+        xfinal = x+1
+        contador +=1
+    elif (k == 'w'):
+        yfinal = y-1
+        xfinal = x-1
+        contador +=1
+    print(xfinal)
+    print(yfinal)
+
+print('A posição final do robô foi na cordenada ({0},{1})'.format(xfinal,yfinal))
+print('O robô execultou {0} movimentos'.format(contador))
+if (y == 0):
+    print('O robô iniciou no eixo x')
+elif(x == 0):
+    print('O robô iniciou no eixo y')
+elif(x>0 and y>0):
+    print('O robô iniciou no primeiro quadrante')
+elif (x<0 and y>0):
+    print('O robõ iniciou no segundo quadrante')
+elif (x<0 and y<0):
+    print('O robõ iniciou no terceiro quadrante')
+elif (x<0 and y<0):
+    print('O robõ iniciou no quarto quadrante')
+if (yfinal == 0):
+    print('O robô terminou no eixo x')
+elif(xfinal == 0):
+    print('O robô terminou no eixo y')
+elif(xfinal>0 and yfinal>0):
+    print('O robô terminou no primeiro quadrante')
+elif (xfinal<0 and yfinal>0):
+    print('O robõ terminou no segundo quadrante')
+elif (xfinal<0 and yfinal<0):
+    print('O robõ terminou no terceiro quadrante')
+elif (xfinal<0 and yfinal<0):
+    print('O robõ terminou no quarto quadrante')
