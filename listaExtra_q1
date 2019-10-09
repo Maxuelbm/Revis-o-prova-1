@@ -1,0 +1,11 @@
+mascara = input('Digite a mascara de rede: ')
+
+lista_mascara_dec = mascara.split('.')
+
+lista_mascara_bin = []
+
+for i in lista_mascara_dec: 
+    numero_binario = '{0:b}'.format(int(i))
+    lista_mascara_bin.append(numero_binario.zfill(8))
+
+print(lista_mascara_bin)
