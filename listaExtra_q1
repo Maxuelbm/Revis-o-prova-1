@@ -3,9 +3,25 @@ mascara = input('Digite a mascara de rede: ')
 lista_mascara_dec = mascara.split('.')
 
 lista_mascara_bin = []
+binario = []
+
+contador = 0
+
+verificador = True
 
 for i in lista_mascara_dec: 
     numero_binario = '{0:b}'.format(int(i))
     lista_mascara_bin.append(numero_binario.zfill(8))
 
-print(lista_mascara_bin)
+for j in range (len(lista_mascara_bin)):
+    binario.append(lista_mascara_bin[j])
+
+for k in range (len(binario)):
+    for x in (bonario[k]):
+        if x == 0:
+            for t 
+            contador=contador
+
+
+
+print (binario)
