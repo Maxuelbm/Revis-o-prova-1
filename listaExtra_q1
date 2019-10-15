@@ -14,14 +14,6 @@ for i in lista_mascara_dec:
     lista_mascara_bin.append(numero_binario.zfill(8))
 
 for j in range (len(lista_mascara_bin)):
-    binario.append(lista_mascara_bin[j])
+    binario.append([lista_mascara_bin[j]])
 
 for k in range (len(binario)):
-    for x in (bonario[k]):
-        if x == 0:
-            for t 
-            contador=contador
-
-
-
-print (binario)
