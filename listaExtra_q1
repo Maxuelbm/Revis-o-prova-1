@@ -17,3 +17,7 @@ for j in range (len(lista_mascara_bin)):
     binario.append([lista_mascara_bin[j]])
 
 for k in range (len(binario)):
+    for j in (binario[k])
+        if j == '0'
+            teste = binario.index(j)
+            for x in range (binario[teste], binario[k])
